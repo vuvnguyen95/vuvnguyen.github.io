@@ -13,33 +13,57 @@
             <div id="logo">
                 <img src="./images/Logo.png" alt="Logo" width = 5%>
                 <span>Vu Nguyen</span>
-            </div>
-            <div id="menu">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-                <a href="#projects">Projects</a>
+                <div id="menu">
+                    <a href="./index.html">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#projects">Projects</a>
+                </div>
             </div>
         </nav>
     </header>
     
     <div class="content-wrap">
-        <section id="home" class="content-block">
-            <h1>Welcome</h1>
-            <p>I'm Vu Nguyen, a software developer with a keen interest in data engineering and analytics...</p>
-            <img src="./images/intro.jpg" width = 40%>
-            <a href="#projects" class="btn">View work</a>
-        </section>
-        
         <section id="about" class="content-block">
-            <h2>Education</h2>
-            <p>Bachelor's degree in Computer Science with the GPA of 3.81...</p>
+            <h1>Welcome</h1>
+            <div id="about" class="intro-flex">
+                <div class="intro-text">
+                    <h1>Hi! My name is Vu Nguyen</h1>
+                    <p>I'm a software developer deeply interested in data engineering, currently working towards my Bachelor's in Computer Science at the University of South Carolina. 
+                        My journey so far has been exciting, filled with hands-on projects that have honed my problem-solving skills. 
+                        Fluent in both English and Vietnamese, I'm eager to dive into data-driven projects and make meaningful contributions wherever I go.</p>            
+                    <a href="#projects" class="btn">View work</a>
+                </div>
+                <div class="intro-img">
+                    <img src="./images/intro.jpg" alt="Intro">
+                </div>
+            </div>
         </section>
         
         <section id="skills" class="content-block">
-            <h2>Skills</h2>
-            <p>My skill set includes advanced knowledge in C++, Java, Kotlin, JavaScript...</p>
+            <div class="skills-header">
+                <h1>Academic</h1>
+            </div>
+            <div id="skills" class="skills-flex">
+                <div class="skills-img">
+                    <img src="./images/grid-banner_2-logo-black.jpg" alt="Skills">
+                </div>
+                <div>
+                    <div class="skills-text">
+                        <h2>Background</h2>
+                        <p>I'm currently completing my Bachelor's degree in Computer Science at the University of South Carolina, where I've had the opportunity to dive deep into both the theoretical and practical aspects of software development and data engineering. My coursework spans a broad spectrum, from programming fundamentals in Java and C++ to advanced topics like machine learning, equipping me with a robust foundation to tackle complex problems in technology.</p>
+                    </div>
+                    <div class="skills-text">
+                        <h2>Skills</h2>
+                        <p>My skill set includes advanced knowledge in C++, Java, Kotlin, JavaScript, and Python, as well as experience with data engineering tools like Apache Spark and Hadoop. 
+                            I'm also familiar with machine learning libraries like TensorFlow and PyTorch, and have a strong foundation in data structures and algorithms. 
+                            My experience with web development includes working with React, Node.js, and Express, and I'm comfortable with both SQL and NoSQL databases. 
+                            I'm also familiar with cloud platforms like AWS and Firebase.</p>
+                    </div>
+                </div>
+
+            </div>
         </section>
         
         <section id="projects" class="content-block">
