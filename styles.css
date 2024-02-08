@@ -129,4 +129,86 @@ html {
 #project-prev { left: 10px; }
 #project-next { right: 10px; }
 
+/* Additional Global Styles */
+.content-wrap {
+    position: relative;
+    z-index: 1;
+    background: url('./images/background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.content-block {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 2rem auto;
+    padding: 20px;
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 50px; /* Adjust as needed */
+}
+
+#logo span {
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Adjusted Sections for Background */
+#about, #skills, #projects, #contact {
+    background-attachment: fixed;
+    background-color: rgba(255,255,255,0.8); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect for the background */
+}
+
+/* Style for navigation arrows in the projects section */
+#project-prev, #project-next {
+    font-size: 1.5rem; /* Larger arrow size */
+    top: calc(50% - 20px); /* Centering adjustment based on button size */
+    z-index: 10; /* Ensure arrows are above the project images */
+}
+
+/* Ensure content blocks are visible above the static background */
+.content-block {
+    position: relative;
+    z-index: 2;
+}
+
+/* Static background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./images/static-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Add transitions to content blocks for smooth scrolling effect */
+.content-block {
+    transition: transform 0.3s ease-out;
+}
+
+/* Add hover effect on content blocks */
+.content-block:hover {
+    transform: translateY(-10px);
+}
 
