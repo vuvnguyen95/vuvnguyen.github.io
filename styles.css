@@ -54,6 +54,7 @@ html {
   color: #ffffff;
   font-size: 1.5em;
   justify-content: space-between;
+  gap: 20px;
 }
 #menu {
   display: flex;
