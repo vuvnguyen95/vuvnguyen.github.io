@@ -26,19 +26,6 @@ html {
   scroll-behavior: initial;
 }
 
-/* Sticky header */
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  flex: 1;
-  flex-direction: column;
-  background-color: #000000;
-  z-index: 1000;
-  border-bottom: 2px solid #f4f4f4;
-  padding: 10px 20px;
-}
-
 .heading {
   position: fixed;
   width: 100%;
@@ -47,8 +34,11 @@ header {
   z-index: 1000;
   border-bottom: 2px solid #f4f4f4;
   padding: 20px;
+  flex: 1;
+  flex-direction: column;
 }
 #logo {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -58,16 +48,18 @@ header {
 }
 
 #logo span {
+    position: relative;
   margin-left: 10px;
   margin-right: 15%;
   color: #ffffff;
   font-size: 1.5em;
+  justify-content: space-between;
 }
-#menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 30%;
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30%;
 }
 
 #menu a {
