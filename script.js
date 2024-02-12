@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       skillsInfo.style.opacity = 0;
       setTimeout(() => {
         backgroundInfo.style.opacity = 1;
-      });
+      },0);
     } else {
         skillsInfo.style.display = "block";
       backgroundInfo.style.display = "none";
@@ -32,10 +32,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
       backgroundInfo.style.opacity = 0;
       setTimeout(() => {
         skillsInfo.style.opacity = 1;
-      });
-
+      },0);
     }
-
   });
   
 
@@ -94,14 +92,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
     document.querySelector("#projects").scrollIntoView({
       behavior: "smooth",
     });
-  });
-
-  const projectContainer = document.querySelector("#projects");
-  document.querySelector("#project-prev").addEventListener("click", () => {
-    projectContainer.scrollLeft -= 200; // Adjust as needed
-  });
-
-  document.querySelector("#project-next").addEventListener("click", () => {
-    projectContainer.scrollLeft += 200; // Adjust as needed
   });
 });
