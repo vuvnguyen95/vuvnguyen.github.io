@@ -63,13 +63,20 @@ header {
   color: #ffffff;
   font-size: 1.5em;
 }
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    
+}
 
 #menu a {
   text-decoration: none;
   text-emphasis: bold;
   font-size: large;
   color: #ffffff;
-  margin-left: 50px;
+  margin-left: 40%;
   padding: 20px;
   border-radius: 5px;
   transition: background-color 0.3s;
