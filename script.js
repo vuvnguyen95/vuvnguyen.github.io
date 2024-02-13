@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", (e) => {
-  const menuLinks = document.querySelectorAll("nav #menu a");
+  const menuLinks = document.querySelectorAll(".menu a");
   menuLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
