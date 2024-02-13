@@ -51,18 +51,7 @@ html {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-}
-
-.logo h1 {
-  color: #ffffff;
-  font-size: 1.3em;
-  letter-spacing: 2px;
-  margin-left: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s;
 }
 
 .logo img {
@@ -70,9 +59,27 @@ html {
   flex-shrink: 0;
 }
 
+.logo a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+.logo p {
+  color: #ffffff;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
 #menu {
   display: flex;
   justify-content: space-between;
+  width: 50%;
 }
 
 #menu a {
